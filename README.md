@@ -43,7 +43,7 @@ Delete your color-changer code from App.js and App.css, and replace it with this
 ![counter animation](https://media.giphy.com/media/XkdutdNYhsp7pCVWIY/giphy.gif)
 
 ## Put our states all together!
-You can have any number of pieces of state, creating each one with a separate invocation of `useState`. We're going to use this to combine our two little state gadgets into one interactive webpage!
+You can have any number of pieces of state, creating each one with a separate invocation of `useState`. We're going to use this to combine our two little state gadgets into one interactive webpage! Note that at this point, all your code should be in App.js: we're going to talk about breaking it into components in the next section.
 ![combined gadget](https://media.giphy.com/media/jEfrYdLuaRIjjI7ekU/giphy.gif)
 
 ## Moving our state into separate components
