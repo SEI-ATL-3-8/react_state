@@ -1,12 +1,3 @@
-
-
-
-- make the single box in app.js
-- how to make multiples? should we have many useStates in app.js? no
-- make the box component w/ self-contained state
-- 
-
-
 # State in React
 State is the internal knowledge that any component can have about itself. Any javascript variable can be stored in state: strings, numbers, booleans, arrays, objects, even functions. State is what lets the different components on our page be unique, even though they follow a very similar template.
 
@@ -37,7 +28,7 @@ function ColorChanger() {
 export default ColorChanger
 ```
 1. First things first: we have to import `useState`. Why is it wrapped in curly bois? This is compact object notation, it's short for `import { useState: useState } from 'react'`. It's needed because the `'react'` package exports many things, not just a single default export. So if we want to grab one of the tools that it makes available to us, we have to grab it by name. `import { useState: useState } from 'react'` means "I want to reach into the react package, find the thing that it exports under the name useState, and I want to assign it to the variable useState in my file.
-2. `const [color, setColor] = useState('red')` is assigning two variables wrapped in an array. It's unpacking the 2-element array that useState returns. useState gives us a two-part return value: the first part is the getter for this state value, and the second part is the setter. This line is identical to:
+2. `const [color, setColor] = useState('red')` is assigning two variables wrapped in an array. It's unpacking the 2-element array that useState returns. useState gives us a two-part return value: the first part is the getter for this state value, and the second part is the setter. This one line is identical to:
 ```js
 const colorStateResult = useState('red')
 const color = colorStateResult[0]
